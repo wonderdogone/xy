@@ -45,7 +45,17 @@
 
 	<div data-role="header" data-theme="b" style="overflow:hidden;">
     <h1>Hotel</h1>
-    <a href="#" data-icon="gear" class="ui-btn-right">Quick Jump</a>
+    <!-- <a href="#" data-icon="gear" class="ui-btn-right">Quick Jump</a> -->
+    <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-transition="slideup" data-icon="gear" data-theme="b" class="ui-btn-right">Quick Jump</a>
+	<div data-role="popup" id="popupMenu" data-theme="c">
+	        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
+	            <li data-role="divider" data-theme="b">Choose an action</li>
+	            <li><a href="#">Temperature</a></li>
+	            <li><a href="#">Lights</a></li>
+	            <li><a href="#">TV</a></li>
+	            <li><a href="#">Front Desk</a></li>
+	        </ul>
+	</div>
     </div><!-- /header -->
 
 	<div data-role="content">	
@@ -78,23 +88,34 @@
 	<!-- TEST -->
 	<div class="ui-block-a">
         <div class="ui-body ui-body-d">
-            <h2>Apple schedules 'iPad Mini' event for October 23</h2>
-            <p>One of the worst-kept secrets in tech has been confirmed: Apple will hold an event October 23 in San Jose, California, at which the company is widely expected to unveil a smaller, cheaper version of its popular iPad called "Mini".</p>
+            <h4>BRUNO MARS AT THE CHELSEA</h4>
+            <p><img src="img/Bruno.jpg" id="bruno"/>After his inaugural performance marks the grand opening of The Chelsea, the newest performance space at The Cosmopolitan of Las Vegas, Bruno Mars returns for an extended engagement through 2014. See this 14-time Grammy nominee perform live amidst a stunning combination of industrial grit and artistic glamour for an unforgettable live performance in Las Vegas.</p>
+
         </div>
     </div>
     <div class="ui-block-b">
         <div class="ui-body ui-body-d">
-            <h4>Microsoft Surface tablet goes on sale for $499</h4>
-            <p>The Microsoft Surface tablet picture has come into focus. The Redmond giant filled in the blanks on the new tablet's availability and specs.</p>
+            <h4>BOND</h4>
+            <p><img src="img/bond.jpg" id="bruno"/>Offering a mash up of dynamic LED art, live performance and upbeat house music, Bond is a rhythmic and vibrant performance space and bar.</p>
+        </div>
+    </div>
+    <div class="ui-block-c">
+        <div class="ui-body ui-body-d">
+            <h4>BOND</h4>
+            <p><img src="img/bond.jpg" id="bruno"/>Offering a mash up of dynamic LED art, live performance and upbeat house music, Bond is a rhythmic and vibrant performance space and bar.</p>
+        </div>
+    </div>
+    <div class="ui-block-d">
+        <div class="ui-body ui-body-d">
+            <h4>BOND</h4>
+            <p><img src="img/bond.jpg" id="bruno"/>Offering a mash up of dynamic LED art, live performance and upbeat house music, Bond is a rhythmic and vibrant performance space and bar.</p>
         </div>
     </div>
   	<!-- END TEST -->
 	
-
-	
 	</div><!-- /content -->
 	
-	<div data-role="footer" data-theme="b">
+	<div data-role="footer" data-theme="b" data-position="fixed">
 		<em id="lab">&nbsp;The Cosmopolitan of Las Vegas 3708 Las Vegas Boulevard South Las Vegas, NV 89109 (702) 698-7000</em>
 		<div class="frank">
  			<img src="img/image004.png" alt="" >

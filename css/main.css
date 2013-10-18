@@ -1,6 +1,7 @@
 /* CSS FOR PAGE ONE */
+/*
 [data-role=page]{height: 100% !important; position:relative !important;}
-[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} */
 
 body {
     background-image: url('../img/body-bg.jpg') !important;
@@ -39,12 +40,27 @@ div.img
 	padding-right:10px;
 }
 
+#bruno {
+	float: left;
+	padding: 10px;
+  	height: 15%;
+  	width: 15%;
+}
 
+<!-- FRONT PAGE BLOCKS -->
 .ui-block-a {
 	width: 100%;
 }
 
 .ui-block-b {
+	width: 100%;
+}
+
+.ui-block-c {
+	width: 100%;
+}
+
+.ui-block-d {
 	width: 100%;
 }
 
