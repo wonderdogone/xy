@@ -42,10 +42,11 @@
 <body> 
 
 <div data-role="page">
-
+	
+	
 	<div data-role="header" data-theme="b" style="overflow:hidden;">
     <h1>Hotel</h1>
-    <!-- <a href="#" data-icon="gear" class="ui-btn-right">Quick Jump</a> -->
+    <a href="#chatter" data-role="button" data-inline="true "data-icon="grid" data-corners="false" class="ui-btn-left">Chatter</a>
     <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-transition="slideup" data-icon="gear" data-theme="b" class="ui-btn-right">Quick Jump</a>
 	<div data-role="popup" id="popupMenu" data-theme="c">
 	        <ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="d">
@@ -74,9 +75,9 @@
 		
 		<div data-role="navbar" data-grid="d">
     <ul>
-        <li><a href="#bar" data-icon="grid" data-theme="b" class="ui-btn-active">Room Controls</a></li>
-        <li><a href="#" data-icon="grid" data-theme="b">TV</a></li>
-        <li><a href="#" data-icon="grid" data-theme="b">Events</a></li>
+        <li><a href="#lights" data-icon="grid" data-theme="b" data-transition="slide" data-inline="true" class="ui-btn-active">Lights</a></li>
+        <li><a href="#tv" data-icon="grid" data-theme="b" data-rel="dialog" data-corners="false" data-transition="pop" data-inline="true">TV</a></li>
+        <li><a href="#" data-icon="grid" data-theme="b">Theremostat</a></li>
         <li><a href="#" data-icon="grid" data-theme="b">Check out</a></li>
         <li><a href="#" data-icon="grid" data-theme="b">Room Service</a></li>
     </ul>
@@ -85,7 +86,7 @@
 	
 	<!-- <p>Visit a unique luxury resort in Las Vegas where there are lots of unexpected and interesting things to see and do around every corner. Explore our activities and amenities below,
 		 and discover how The Cosmopolitan is redefining the Las Vegas experience.</p> -->
-	<!-- TEST -->
+	<!-- Home page active content-->
 	<div class="ui-block-a">
         <div class="ui-body ui-body-d">
             <h4>BRUNO MARS AT THE CHELSEA</h4>
@@ -111,20 +112,21 @@
             <p><img src="img/bond.jpg" id="bruno"/>Offering a mash up of dynamic LED art, live performance and upbeat house music, Bond is a rhythmic and vibrant performance space and bar.</p>
         </div>
     </div>
-  	<!-- END TEST -->
+  	<!-- END Home page active content -->
 	
 	</div><!-- /content -->
 	
-	<div data-role="footer" data-theme="b" data-position="fixed">
+	<div data-role="footer" data-theme="b">
 		<em id="lab">&nbsp;The Cosmopolitan of Las Vegas 3708 Las Vegas Boulevard South Las Vegas, NV 89109 (702) 698-7000</em>
 		<div class="frank">
  			<img src="img/image004.png" alt="" >
  		</div>
 	</div><!-- /footer -->
+
 </div><!-- /page -->
 
 <!-- Start of second page -->
-<div data-role="page" id="bar">
+<div data-role="page" id="lights">
 
 	<div data-role="header">
 		<h1>Bar</h1>
@@ -138,7 +140,28 @@
 	<div data-role="footer">
 		<h4>Page Footer</h4>
 	</div><!-- /footer -->
-</div><!-- /page -->
+</div>
+<!-- second /page -->
+
+<!-- Start of third page -->
+<div data-role="page" id="tv">
+
+	<div data-role="header" data-theme="b">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>
+		<p><a href="#foo">Back to foo</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div>
+<!-- third /page -->
+
+
 
 </body>
 </html>
